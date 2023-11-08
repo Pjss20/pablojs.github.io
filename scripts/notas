@@ -1,0 +1,58 @@
+const miTitulo = document.querySelector("h1"); // obtiene una referencia y lo almacena en una variable
+miTitulo.textContent = "¡Hola mundo!"; // establece el valor de la propiedad
+
+// declaración de una variable
+let variable;
+
+// asigna un valor a la variable
+variable = "";
+
+// tipos de variables
+let variable1 = "Pablo Jesús"; // String
+let variable2 = 10; // number
+let variable3 = true; // boolean
+let variable4 = [1, "Pablo", "Jesus", 10]; // array
+variable[0]; // llama al miembro 0 del array
+let variable5 = document.querySelector("h1"); // object
+
+//Operadores
+let variable6 = 1 + 1; // sumar
+let variable7 = "Hola " + " mundo"; // concatenar
+let variable8 = 2 - 1; // restar
+let variable9 = 5 * 1; // multiplicar
+let variable10 = 15 / 5; // dividir
+let variable11 = "bob"; // asignar
+let variable12 = 3;
+variable12 === 3; // igualdad (variable12 es igual a 3)
+variable12 !== 4 // desigualdad (variable12 es distinto a 4)
+!variable12 == 4; // negación
+
+// condicionales
+let helado = "chocolate";
+if (helado === "chocolate") {
+  alert("¡Sí, amo el helado de chocolate!");
+} else {
+  alert("Awwww, pero mi favorito es el de chocolate...");
+}
+
+// funciones
+alert("¡Hola!");
+// creación de una función
+function multiplica(num1, num2) {
+    let resultado = num1 * num2;
+    return resultado;
+  }
+  // llama a la función
+alert(multiplica(4, 7));
+
+
+// eventos
+/*aquí hemos seleccionado el elemento <html> y le asignamos a su propiedad onclick una función anónima (función sin nombre) que contiene el código que se ejecutará cuando el evento suceda. */
+document.querySelector("html").onclick = function () {
+    alert("¡Ouch! ¡Deja de pincharme!");
+  };
+
+/* equivalente
+let miHTML = document.querySelector("html");
+miHTML.onclick = function () {};
+   */
